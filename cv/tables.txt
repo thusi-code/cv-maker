@@ -1,0 +1,64 @@
+-- Personal Details
+CREATE TABLE personal_details (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(30) NOT NULL,
+    location VARCHAR(100) NOT NULL
+);
+
+-- Programming Skills
+CREATE TABLE programming_skills (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    skill VARCHAR(100) NOT NULL,
+    proficiency INT NOT NULL -- percentage
+);
+
+-- Soft Skills
+CREATE TABLE soft_skills (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    skill VARCHAR(100) NOT NULL,
+    proficiency INT NOT NULL -- percentage
+);
+
+-- Language Skills
+CREATE TABLE language_skills (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    language VARCHAR(100) NOT NULL,
+    proficiency INT NOT NULL -- percentage
+);
+
+-- Education
+CREATE TABLE education (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    degree VARCHAR(150) NOT NULL,
+    institute VARCHAR(150) NOT NULL,
+    period VARCHAR(50) NOT NULL
+);
+
+-- Professional Qualification
+CREATE TABLE professional_qualification (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    qualification VARCHAR(150) NOT NULL,
+    institute VARCHAR(150) NOT NULL,
+    year VARCHAR(20) NOT NULL
+);
+
+-- Experience
+CREATE TABLE experience (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    company VARCHAR(100) NOT NULL,
+    period VARCHAR(50) NOT NULL,
+    description TEXT
+);
+
+-- References
+CREATE TABLE `references` (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    position VARCHAR(100) NOT NULL,
+    organization VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    phone VARCHAR(30)
+);

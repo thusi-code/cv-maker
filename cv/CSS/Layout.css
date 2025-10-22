@@ -1,0 +1,20 @@
+* {
+  padding: 0px;
+}
+
+.sidebar-bg {
+  background-color: #1d3557;
+  color: white;
+}
+
+.nav-container > a {
+  border-radius: 5px;
+}
+
+.nav-container > a:hover {
+  background-color: #485d7a;
+}
+
+.active {
+  background-color: #485d7a;
+}
